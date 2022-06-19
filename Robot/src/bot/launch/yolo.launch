@@ -1,0 +1,6 @@
+<launch>
+<node name='yolov5' pkg='yolo' type='detect.py' args='--source 0' />
+<node name='buzzer' pkg='buzz' type='buzzer.py' />
+<node name='user' pkg='bot' type='user.py' />
+<node name='mov' pkg='move' type='move.py' output='screen' />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/rosp/robot/devel
+
+Name: hi
+Description: Description of hi
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

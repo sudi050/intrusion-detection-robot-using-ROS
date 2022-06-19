@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/rosp/robot/install/setup.sh

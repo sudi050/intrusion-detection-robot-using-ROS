@@ -1,0 +1,2 @@
+bot:buzz:move:yolo
+-DCATKIN_DEVEL_PREFIX=/home/rosp/robot/devel -DCMAKE_INSTALL_PREFIX=/home/rosp/robot/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/rosp/robot/install
+
+Name: bot
+Description: Description of bot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
