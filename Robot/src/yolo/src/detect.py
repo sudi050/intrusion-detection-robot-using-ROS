@@ -38,8 +38,12 @@ from pathlib import Path
 import torch
 import torch.backends.cudnn as cudnn
 
-pub = rospy.Publisher('hi', String, queue_size=10)
+import base64
+
+pub = rospy.Publisher('detection', String, queue_size=10)
 rospy.init_node('talker', anonymous=True)
+
+stream = rospy.Publisher('stream',String,queue_size=10)
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # YOLOv5 root directory
@@ -186,6 +190,10 @@ def run(
             #if view_img:
                # cv2.imshow(str(p), im0)
               #  cv2.waitKey(1)  # 1 millisecond
+            for name,conf in pub_info:
+                if name=="person" and conf > 0.5:
+                    _,im1=cv2.imencode('.jpg',im0)
+                    stream.publish(base64.b64encode(im1).decode())
 
             # Save results (image with detections)
             if save_img:

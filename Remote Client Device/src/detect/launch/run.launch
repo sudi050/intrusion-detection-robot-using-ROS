@@ -1,0 +1,4 @@
+<launch>
+<node name="alarm" pkg="detect" type="subscriber.py" />
+<node name="stream" pkg="detect" type="stream.py" />
+</launch>

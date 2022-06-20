@@ -1,0 +1,2 @@
+detect
+-DCATKIN_DEVEL_PREFIX=/home/sudi/project/devel -DCMAKE_INSTALL_PREFIX=/home/sudi/project/install -G Unix Makefiles

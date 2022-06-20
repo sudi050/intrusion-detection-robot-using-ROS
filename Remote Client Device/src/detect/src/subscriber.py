@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import rospy
 from std_msgs.msg import String
@@ -7,7 +7,7 @@ from playsound import playsound
 
 
 def alarm():
-    playsound('../Downloads/sound.mp3')
+    playsound('../Downloads/sound1.mp3')
 
 def callback(data):
     rospy.loginfo(data.data)
