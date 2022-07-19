@@ -10,7 +10,7 @@ In our Project, we use Raspberry Pi in combination with ROS to design Four wheel
 
 ## How to run
 
-On Raspberry Pi, Install Linux Mint and ROS and then run the commands:
+On Raspberry Pi, Install Linux Ubuntu Mate and ROS and then run the commands:
 
 ```bash
 git clone https://github.com/sudi050/intrusion-detection-robot-using-ROS
